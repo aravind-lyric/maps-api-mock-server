@@ -1,5 +1,9 @@
 # Maps Data API
 
+## Required runtime
+
+[Node.js](https://nodejs.org/en/) is required to run the project. Please have the latest version installed before using this project.
+
 ## Installation
 
 - Clone this repository and `cd` into the root directory of this repository.
