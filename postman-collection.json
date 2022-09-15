@@ -1,0 +1,224 @@
+{
+  "info": {
+    "_postman_id": "ca9f1b49-e081-480e-973d-705d1a79e868",
+    "name": "Map APIs",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Maps Data API",
+      "item": [
+        {
+          "name": "App Data",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "*/*"
+              }
+            ],
+            "url": {
+              "raw": "{{host}}/app-data",
+              "host": ["{{host}}"],
+              "path": ["app-data"]
+            }
+          },
+          "response": [
+            {
+              "name": "Response_200",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "*/*"
+                  }
+                ],
+                "url": {
+                  "raw": "{{host}}/app-data",
+                  "host": ["{{host}}"],
+                  "path": ["app-data"]
+                }
+              },
+              "code": 200,
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "any"
+            }
+          ]
+        },
+        {
+          "name": "App Data",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "*/*"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"one\": \"eight\",\n\t\"three\": \"nine\",\n\t\"new\": \"old\",\n\t\"whatever\": \"nothing\"\n}"
+            },
+            "url": {
+              "raw": "{{host}}/app-data/:datasetId",
+              "host": ["{{host}}"],
+              "path": ["app-data", ":datasetId"],
+              "variable": [
+                {
+                  "key": "datasetId",
+                  "value": "Bsk0pkPQFIzqyJzLI4LnJ"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Response_200",
+              "originalRequest": {
+                "method": "PATCH",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "*/*"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n\t\"one\": \"eight\",\n\t\"three\": \"nine\",\n\t\"new\": \"old\",\n\t\"whatever\": \"nothing\"\n}"
+                },
+                "url": {
+                  "raw": "{{host}}/app-data/:datasetId",
+                  "host": ["{{host}}"],
+                  "path": ["app-data", ":datasetId"],
+                  "variable": [
+                    {
+                      "key": "datasetId",
+                      "value": "Bsk0pkPQFIzqyJzLI4LnJ"
+                    }
+                  ]
+                }
+              },
+              "code": 200,
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "any"
+            }
+          ]
+        },
+        {
+          "name": "Dataset",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "*/*"
+              }
+            ],
+            "url": {
+              "raw": "{{host}}/dataset/:dataset",
+              "host": ["{{host}}"],
+              "path": ["dataset", ":dataset"],
+              "variable": [
+                {
+                  "key": "dataset",
+                  "value": "network_data"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Response_200",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "*/*"
+                  }
+                ],
+                "url": {
+                  "raw": "{{host}}/dataset/:dataset",
+                  "host": ["{{host}}"],
+                  "path": ["dataset", ":dataset"],
+                  "variable": [
+                    {
+                      "key": "dataset",
+                      "value": "network_data"
+                    }
+                  ]
+                }
+              },
+              "code": 200,
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "any"
+            }
+          ]
+        },
+        {
+          "name": "Datasets",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "*/*"
+              }
+            ],
+            "url": {
+              "raw": "{{host}}/datasets",
+              "host": ["{{host}}"],
+              "path": ["datasets"]
+            }
+          },
+          "response": [
+            {
+              "name": "Response_200",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "*/*"
+                  }
+                ],
+                "url": {
+                  "raw": "{{host}}/datasets",
+                  "host": ["{{host}}"],
+                  "path": ["datasets"]
+                }
+              },
+              "code": 200,
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "any"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "host",
+      "value": "http://localhost:3000"
+    }
+  ]
+}
